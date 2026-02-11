@@ -1,0 +1,27 @@
+.products {
+  padding: 50px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 23%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  margin-top: 10px;
+  background: #ff6600;
+}
