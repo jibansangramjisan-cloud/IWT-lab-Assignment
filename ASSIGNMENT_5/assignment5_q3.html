@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>
+      PALINDROME
+    </title>
+    <script language="JavaScript">
+      function palindrome(n){
+        var original = n;
+        var reverse = 0;
+        var remainder;
+
+        while(n != 0){
+          remainder = n % 10;
+          reverse = reverse * 10 + remainder;
+          n = parseInt(n / 10);
+        }
+
+        if(original == reverse)
+          return original + " is a Palindrome";
+        else
+          return original + " is NOT a Palindrome";
+      }
+      document.write(palindrome(121));
+    </script>
+
+    <body bgcolor="violet" text="pink">
+    </body>
+
+  </head>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>
+      COUNT DUPLICATES
+    </title>
+
+    <script language="JavaScript">
+
+      var arr=(10,20,30,20,40,10,50);
+      var count=0;
+
+      for(var i=0;i<arr.length;i++) {
+
+        for(var j=i+1;j<arr.length;j++){
+          if(arr[i]==arr[j]) {
+            count++;
+            break;   
+          }
+        }
+      }
+      document.write("Array: "+arr+"<br>");
+      document.write("Number of duplicate elements = "+count);
+    </script>
+  </head>
+  <body bgcolor="violet" text="pink">
+  </body>
+</html>

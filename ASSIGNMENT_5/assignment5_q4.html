@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>
+      SUM AVERAGE LARGEST SMALLEST
+    </title>
+
+    <script language="JavaScript">
+      var arr = [10, 25, 5, 40, 15];
+      function calculate() {
+        var sum = 0;
+        var largest = arr[0];
+        var smallest = arr[0];
+
+        for(var i = 0; i < arr.length; i++) {
+          sum = sum + arr[i];
+          if(arr[i] > largest)
+            largest = arr[i];
+
+          if(arr[i] < smallest)
+            smallest = arr[i];
+        }
+        var average = sum / arr.length;
+        document.write("Numbers: " + arr);
+        document.write("Sum = " + sum);
+        document.write("Average = " + average);
+        document.write("Largest = " + largest);
+        document.write("Smallest = " + smallest);
+      }
+     calculate();
+    </script>
+  </head>
+  <body bgcolor="violet" text="pink">
+  </body>
+
+</html>
