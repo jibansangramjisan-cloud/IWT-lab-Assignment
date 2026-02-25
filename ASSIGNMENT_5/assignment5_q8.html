@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>
+      PRIME NUMBER CHECK
+    </title>
+
+    <script language="JavaScript">
+
+      function isPrime(num) {
+        if(num <= 1) {
+          return false;
+        }
+        for(var i = 2; i < num; i++) {
+          if(num % i == 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      var num = 17;
+
+      document.write("Number: " + num + "<br>");
+
+      if(isPrime(num)) {
+        document.write("It is a Prime Number");
+      } else {
+        document.write("It is Not a Prime Number");
+      }
+
+    </script> 
+  </head>
+  <body bgcolor="violet" text="pink">
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>
+      FIBONACCI SERIES
+    </title>
+
+    <script language="JavaScript">
+
+      var n = 10;   // number of terms
+      var a = 0, b = 1, c;
+
+      document.write("Fibonacci Series: <br>");
+      document.write(a + " " + b + " ");
+
+      for(var i = 3; i <= n; i++) {
+        c = a + b;
+        document.write(c + " ");
+        a = b;
+        b = c;
+      }
+
+    </script>
+  </head>
+  <body bgcolor="violet" text="pink">
+  </body>
+</html>
